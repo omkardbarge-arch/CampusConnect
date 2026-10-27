@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const API_BASE = (import.meta.env.VITE_API_URL || 'http://localhost:5000').replace(/\/$/, '');
+const API_BASE = (import.meta.env.VITE_API_URL || 'https://campusconnect-api-ck5p.onrender.com').replace(/\/$/, '');
 
 function useFormSubmit(endpoint) {
   const [state, setState] = useState({ type: '', message: '', loading: false });
